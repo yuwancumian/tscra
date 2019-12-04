@@ -3,20 +3,50 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 16vmin;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 1vmin);
   color: white;
+  padding: 20px;
 }
 
 .App-link {
   color: #09d3ac;
+}
+
+.content {
+  position: relative;
+  padding-top: 18px;
+}
+
+.menu {
+  position: absolute;
+  left: 28px;
+  top: 18px;
+  width: 160px;
+  background: #282c34;
+  border-radius: 8px;
+  line-height: 26px;
+  padding: 18px 24px;
+}
+
+.menu ul {
+  padding-left: 0px;
+}
+
+.menu a {
+  color: #09d3ac;
+}
+
+.menu li {
+  list-style: none;
+  text-align: left;
 }
