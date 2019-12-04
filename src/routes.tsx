@@ -1,6 +1,6 @@
 import React from 'react'
-import About from './About';
-import Home from './Home';
+import About from './pages/About';
+import Home from './pages/Home';
 import {
   BrowserRouter as Router,
   Switch,
@@ -10,7 +10,7 @@ import {
 
 function Routes() {
   return (
-    <Router> 
+    <Router>
       <div className="menu">
         <ul>
           <li>
@@ -22,13 +22,13 @@ function Routes() {
         </ul>
       </div>
       <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
+        <Route path="/about">
+          <About />
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
     </Router>
   )
 }
